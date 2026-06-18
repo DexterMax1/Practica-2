@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- Define la codificación de caracteres -->
+    <meta charset="UTF-8">
+
+    <!-- Permite que la página se adapte a dispositivos móviles -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <!-- Título mostrado en la pestaña del navegador -->
+    <title>Carrito de Compras | NovaTech Market</title>
+
+    <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- Estilos responsive para móviles y tablets -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Estilos de animaciones -->
+    <link rel="stylesheet" href="css/animaciones.css">
+
+</head>
+
+<body>
+
+    <!-- =========================
+         ENCABEZADO DEL SITIO
+         ========================= -->
+    <header>
+
+        <!-- Nombre de la empresa -->
+        <h1>NovaTech Market</h1>
+
+        <!-- Descripción de la página -->
+        <p>Carrito de Compras</p>
+
+        <!-- Menú de navegación -->
+        <nav>
+
+            <ul>
+
+                <li><a href="index.html">Inicio</a></li>
+
+                <li><a href="productos.html">Productos</a></li>
+
+                <li><a href="carrito.html">Carrito</a></li>
+
+                <li><a href="contacto.html">Contacto</a></li>
+
+                <li><a href="acerca.html">Acerca de</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <hr>
+
+    <main>
+
+        <!-- =========================
+             INFORMACIÓN GENERAL
+             ========================= -->
+        <section>
+
+            <h2>Productos Agregados al Carrito</h2>
+
+            <p>
+                Aquí se muestran los productos
+                seleccionados por el cliente.
+            </p>
+
+        </section>
+
+        <hr>
+
+        <!-- =========================
+             TABLA DE PRODUCTOS
+             ========================= -->
+        <section>
+
+            <h2>Detalle de Compra</h2>
+
+            <!-- Tabla para mostrar información organizada -->
+            <table border="1">
+
+                <!-- Título descriptivo de la tabla -->
+                <caption>
+                    Productos Seleccionados
+                </caption>
+
+                <!-- Encabezado de la tabla -->
+                <thead>
+
+                    <tr>
+
+                        <!-- Títulos de las columnas -->
+                        <th>Producto</th>
+
+                        <th>Cantidad</th>
+
+                        <th>Precio Unitario</th>
+
+                        <th>Subtotal</th>
+
+                    </tr>
+
+                </thead>
+
+                <!-- Cuerpo principal de la tabla -->
+                <tbody>
+
+                    <tr>
+
+                        <td>Laptop Gamer Pro X</td>
+
+                        <td>1</td>
+
+                        <td>$1200</td>
+
+                        <td>$1200</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Mouse Gamer RGB</td>
+
+                        <td>2</td>
+
+                        <td>$50</td>
+
+                        <td>$100</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Teclado Mecánico</td>
+
+                        <td>1</td>
+
+                        <td>$90</td>
+
+                        <td>$90</td>
+
+                    </tr>
+
+                </tbody>
+
+                <!-- Pie de la tabla para mostrar totales -->
+                <tfoot>
+
+                    <tr>
+
+                        <!-- colspan une varias columnas -->
+                        <td colspan="3">
+                            Total a Pagar
+                        </td>
+
+                        <td>
+                            <strong>$1390</strong>
+                        </td>
+
+                    </tr>
+
+                </tfoot>
+
+            </table>
+
+        </section>
+
+        <hr>
+
+        <!-- =========================
+             ETIQUETA METER
+             Muestra una medición dentro
+             de un rango definido
+             ========================= -->
+        <section>
+
+            <h2>Disponibilidad de Inventario</h2>
+
+            <p>
+                Nivel de inventario actual:
+            </p>
+
+            <meter
+                value="75"
+                min="0"
+                max="100">
+
+                75%
+
+            </meter>
+
+            <p>
+                Inventario disponible: 75%
+            </p>
+
+        </section>
+
+        <hr>
+
+        <!-- =========================
+             ETIQUETA PROGRESS
+             Muestra el avance de un proceso
+             ========================= -->
+        <section>
+
+            <h2>Progreso de la Compra</h2>
+
+            <p>
+                Estado del proceso de compra:
+            </p>
+
+            <progress
+                value="3"
+                max="5">
+
+            </progress>
+
+            <p>
+                Paso 3 de 5 completado.
+            </p>
+
+        </section>
+
+        <hr>
+
+        <!-- =========================
+             RESUMEN DEL PEDIDO
+             ========================= -->
+        <section>
+
+            <h2>Resumen</h2>
+
+            <!-- Lista de información resumida -->
+            <ul>
+
+                <li>Total de productos: 4</li>
+
+                <li>Subtotal: $1390</li>
+
+                <li>Descuento aplicado: 10%</li>
+
+                <li>Envío: Gratis</li>
+
+            </ul>
+
+            <!-- Muestra el total final -->
+            <h3>
+                Total Final: $1251
+            </h3>
+
+        </section>
+
+        <hr>
+
+        <!-- =========================
+             BOTONES DE ACCIÓN
+             ========================= -->
+        <section>
+
+            <h2>Opciones</h2>
+
+            <!-- Botón para regresar a la tienda -->
+            <button>
+                Continuar Comprando
+            </button>
+
+            <!-- Botón para eliminar productos del carrito -->
+            <button>
+                Vaciar Carrito
+            </button>
+
+            <!-- Botón para finalizar la compra -->
+            <button>
+                Finalizar Compra
+            </button>
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- =========================
+         PIE DE PÁGINA
+         ========================= -->
+    <footer>
+
+        <!-- Información de contacto -->
+        <address>
+
+            NovaTech Market<br>
+
+            Santo Domingo,
+            República Dominicana
+
+        </address>
+
+        <!-- Derechos de autor -->
+        <small>
+
+            © 2026 NovaTech Market.
+            Todos los derechos reservados.
+
+        </small>
+
+    </footer>
+
+</body>
+
+</html>

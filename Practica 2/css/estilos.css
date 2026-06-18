@@ -1,0 +1,584 @@
+/* =====================================
+   VARIABLES CSS
+   Aquí se crean variables reutilizables
+   para colores del sitio web.
+===================================== */
+
+:root {
+
+    /* Color principal utilizado en encabezados y pie de página */
+    --color-primario: black;
+
+    /* Color secundario utilizado en botones y enlaces */
+    --color-secundario: #2563EB;
+
+    /* Color utilizado para resaltar elementos */
+    --color-acento: #F59E0B;
+
+    /* Color de fondo general de la página */
+    --color-fondo: #F8FAFC;
+
+    /* Color principal del texto */
+    --color-texto: #1F2937;
+
+    /* Color blanco reutilizable */
+    --color-blanco: #FFFFFF;
+
+    /* Color gris para bordes y detalles */
+    --color-gris: #E5E7EB;
+
+}
+
+/* =====================================
+   CONFIGURACIÓN GENERAL
+===================================== */
+
+* {
+
+    /* Elimina márgenes predeterminados */
+    margin: 0;
+
+    /* Elimina rellenos predeterminados */
+    padding: 0;
+
+    /* Incluye padding y borde dentro del tamaño total */
+    box-sizing: border-box;
+
+}
+
+body {
+
+    /* Fuente principal del sitio */
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Color de fondo de la página */
+    background-color: var(--color-fondo);
+
+    /* Color del texto */
+    color: var(--color-texto);
+
+    /* Espaciado entre líneas */
+    line-height: 1.6;
+
+}
+
+/* =====================================
+   HEADER
+===================================== */
+
+header {
+
+    /* Color de fondo del encabezado */
+    background-color: var(--color-primario);
+
+    /* Color del texto */
+    color: white;
+
+    /* Espacio interno */
+    padding: 20px;
+
+    /* Centra el contenido */
+    text-align: center;
+
+    /* Mantiene el header visible al hacer scroll */
+    position: sticky;
+
+    /* Lo fija en la parte superior */
+    top: 0;
+
+    /* Prioridad de visualización */
+    z-index: 1000;
+
+    /* Sombra debajo del encabezado */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+
+}
+
+header p {
+
+    /* Espacio superior para separar el texto */
+    margin-top: 5px;
+
+}
+
+/* =====================================
+   MENÚ DE NAVEGACIÓN
+===================================== */
+
+nav ul {
+
+    /* Elimina viñetas */
+    list-style: none;
+
+    /* Muestra elementos en fila */
+    display: flex;
+
+    /* Centra horizontalmente */
+    justify-content: center;
+
+    /* Permite que bajen de línea */
+    flex-wrap: wrap;
+
+    /* Espacio entre elementos */
+    gap: 15px;
+
+    /* Separación superior */
+    margin-top: 15px;
+
+}
+
+nav a {
+
+    /* Quita subrayado */
+    text-decoration: none;
+
+    /* Texto blanco */
+    color: white;
+
+    /* Texto en negrita */
+    font-weight: bold;
+
+    /* Espaciado interno */
+    padding: 10px 15px;
+
+    /* Bordes redondeados */
+    border-radius: 8px;
+
+    /* Suaviza animaciones */
+    transition: 0.3s;
+
+}
+
+nav a:hover {
+
+    /* Color al pasar el mouse */
+    background-color: var(--color-acento);
+
+    color: black;
+
+}
+
+/* =====================================
+   MAIN
+===================================== */
+
+main {
+
+    /* Ancho del contenido */
+    width: 90%;
+
+    /* Centra horizontalmente */
+    margin: 30px auto;
+
+}
+
+/* =====================================
+   SECCIONES
+===================================== */
+
+section {
+
+    /* Fondo blanco */
+    background-color: white;
+
+    /* Espacio interno */
+    padding: 20px;
+
+    /* Separación entre secciones */
+    margin-bottom: 25px;
+
+    /* Bordes redondeados */
+    border-radius: 12px;
+
+    /* Sombra suave */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+}
+
+section h2 {
+
+    /* Espacio debajo del título */
+    margin-bottom: 15px;
+
+    /* Color del título */
+    color: var(--color-primario);
+
+}
+
+/* =====================================
+   PRODUCTOS
+===================================== */
+
+article {
+
+    /* Fondo blanco */
+    background-color: white;
+
+    /* Borde gris */
+    border: 1px solid var(--color-gris);
+
+    /* Esquinas redondeadas */
+    border-radius: 12px;
+
+    /* Espaciado interno */
+    padding: 15px;
+
+    /* Separación inferior */
+    margin-bottom: 20px;
+
+    /* Sombra ligera */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+    /* Animación suave */
+    transition: 0.3s;
+
+}
+
+article:hover {
+
+    /* Agranda ligeramente la tarjeta */
+    transform: scale(1.03);
+
+}
+
+article img {
+
+    /* Ocupa todo el ancho disponible */
+    width: 100%;
+
+    /* Máximo de 300px */
+    max-width: 300px;
+
+    /* Convierte la imagen en bloque */
+    display: block;
+
+    /* Centra la imagen */
+    margin: 15px auto;
+
+    /* Bordes redondeados */
+    border-radius: 10px;
+
+}
+
+article h3 {
+
+    /* Color del nombre del producto */
+    color: var(--color-secundario);
+
+}
+
+/* =====================================
+   BOTONES
+===================================== */
+
+button,
+input[type="submit"],
+input[type="reset"] {
+
+    /* Color de fondo */
+    background-color: var(--color-secundario);
+
+    /* Texto blanco */
+    color: white;
+
+    /* Sin borde */
+    border: none;
+
+    /* Espaciado interno */
+    padding: 12px 20px;
+
+    /* Bordes redondeados */
+    border-radius: 8px;
+
+    /* Cursor de mano */
+    cursor: pointer;
+
+    /* Margen superior */
+    margin-top: 10px;
+
+    /* Transición suave */
+    transition: 0.3s;
+
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+
+    /* Cambia color al pasar el mouse */
+    background-color: var(--color-acento);
+
+    color: black;
+
+}
+
+/* =====================================
+   FORMULARIOS
+===================================== */
+
+form {
+
+    /* Separación superior */
+    margin-top: 20px;
+
+}
+
+label {
+
+    /* Texto en negrita */
+    font-weight: bold;
+
+}
+
+input,
+textarea,
+select {
+
+    /* Ancho completo */
+    width: 100%;
+
+    /* Espacio interno */
+    padding: 10px;
+
+    /* Márgenes */
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+    /* Borde gris */
+    border: 1px solid #ccc;
+
+    /* Bordes redondeados */
+    border-radius: 8px;
+
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+
+    /* Quita borde predeterminado */
+    outline: none;
+
+    /* Resalta el campo seleccionado */
+    border: 2px solid var(--color-secundario);
+
+}
+
+/* =====================================
+   TABLAS
+===================================== */
+
+table {
+
+    /* Ocupa todo el ancho */
+    width: 100%;
+
+    /* Une bordes */
+    border-collapse: collapse;
+
+    margin-top: 15px;
+
+}
+
+th {
+
+    /* Fondo oscuro */
+    background-color: var(--color-primario);
+
+    color: white;
+
+    padding: 12px;
+
+}
+
+td {
+
+    padding: 12px;
+
+    text-align: center;
+
+}
+
+tr:nth-child(even) {
+
+    /* Color alternado para filas pares */
+    background-color: #f2f2f2;
+
+}
+
+tr:hover {
+
+    /* Resalta fila seleccionada */
+    background-color: #ddd;
+
+}
+
+/* =====================================
+   IMÁGENES
+===================================== */
+
+img {
+
+    /* Imagen adaptable */
+    max-width: 100%;
+
+    height: auto;
+
+}
+
+/* =====================================
+   VIDEO Y AUDIO
+===================================== */
+
+video,
+audio {
+
+    /* Ocupan todo el ancho disponible */
+    width: 100%;
+
+    margin-top: 15px;
+
+}
+
+/* =====================================
+   DETAILS Y SUMMARY
+===================================== */
+
+details {
+
+    /* Separación entre bloques */
+    margin-bottom: 15px;
+
+    padding: 10px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+}
+
+summary {
+
+    /* Cursor tipo mano */
+    cursor: pointer;
+
+    /* Texto en negrita */
+    font-weight: bold;
+
+    color: var(--color-secundario);
+
+}
+
+/* =====================================
+   METER Y PROGRESS
+===================================== */
+
+meter,
+progress {
+
+    /* Ancho completo */
+    width: 100%;
+
+    /* Altura de la barra */
+    height: 25px;
+
+    margin-top: 10px;
+
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+
+    /* Fondo oscuro */
+    background-color: var(--color-primario);
+
+    /* Texto blanco */
+    color: white;
+
+    /* Centrado */
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 30px;
+
+}
+
+/* =====================================
+   TEXTO ESPECIAL
+===================================== */
+
+mark {
+
+    /* Resalta texto */
+    background-color: yellow;
+
+    padding: 3px;
+
+}
+
+blockquote {
+
+    /* Línea decorativa lateral */
+    border-left: 5px solid var(--color-secundario);
+
+    padding-left: 15px;
+
+    margin: 15px 0;
+
+    /* Texto en cursiva */
+    font-style: italic;
+
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 768px) {
+
+    /* Menú en columna para tablets */
+    nav ul {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+    /* Contenido más ancho */
+    main {
+
+        width: 95%;
+
+    }
+
+    /* Imagen ocupa todo el ancho */
+    article img {
+
+        width: 100%;
+
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    /* Reduce padding del encabezado */
+    header {
+
+        padding: 15px;
+
+    }
+
+    /* Reduce padding de secciones */
+    section {
+
+        padding: 15px;
+
+    }
+
+}

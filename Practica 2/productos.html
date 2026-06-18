@@ -1,0 +1,714 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Productos | NovaTech Market</title>
+
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/animaciones.css">
+
+
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header>
+
+        <h1>NovaTech Market</h1>
+
+        <p>Catálogo de Productos Tecnológicos</p>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="index.html">Inicio</a></li>
+
+                <li><a href="productos.html">Productos</a></li>
+
+                <li><a href="carrito.html">Carrito</a></li>
+
+                <li><a href="contacto.html">Contacto</a></li>
+
+                <li><a href="acerca.html">Acerca de</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <hr>
+
+    <main>
+
+        <!-- FILTROS -->
+
+        <aside>
+
+            <h2>Filtros</h2>
+
+            <form>
+
+                <fieldset>
+
+                    <legend>Buscar Productos</legend>
+
+                    <label for="precio">
+                        Precio Máximo
+                    </label>
+
+                    <input
+                        type="number"
+                        id="precio"
+                        placeholder="Ej: 1000">
+
+                    <br><br>
+
+                    <label for="marca">
+                        Marca
+                    </label>
+
+                    <select id="marca">
+
+                        <option>Seleccione</option>
+
+                        <option>ASUS</option>
+
+                        <option>Apple</option>
+
+                        <option>Samsung</option>
+
+                        <option>Logitech</option>
+
+                        <option>LG</option>
+
+                    </select>
+
+                    <br><br>
+
+                    <label for="categoria">
+                        Categoría
+                    </label>
+
+                    <select id="categoria">
+
+                        <option>Laptops</option>
+
+                        <option>Smartphones</option>
+
+                        <option>Gaming</option>
+
+                        <option>Accesorios</option>
+
+                    </select>
+
+                    <br><br>
+
+                    <label for="color">
+                        Color
+                    </label>
+
+                    <input
+                        list="colores"
+                        id="color">
+
+                    <datalist id="colores">
+
+                        <option value="Negro">
+
+                        <option value="Blanco">
+
+                        <option value="Azul">
+
+                        <option value="Rojo">
+
+                    </datalist>
+
+                    <br><br>
+
+                    <button type="submit">
+                        Aplicar Filtros
+                    </button>
+
+                </fieldset>
+
+            </form>
+
+        </aside>
+
+        <hr>
+
+        <!-- LISTA DE PRODUCTOS -->
+
+        <section>
+
+            <h2>Todos los Productos</h2>
+
+            <!-- PRODUCTO 1 -->
+
+            <article>
+
+                <header>
+
+                    <h3>Laptop Gamer ASUS ROG</h3>
+
+                </header>
+
+                <img
+                    src="img/Screenshot 2023 140.png"
+                    alt="Laptop Gamer ASUS"
+                    width="250">
+
+                <p>
+                    Intel Core i7,
+                    16GB RAM,
+                    SSD 512GB.
+                </p>
+
+                <p>
+                    Precio:
+                    <strong>$1200</strong>
+                </p>
+
+                <p>
+                    <mark>20% OFF</mark>
+                </p>
+
+                <button>
+                    Agregar al carrito
+                </button>
+
+                <footer>
+                    Disponible
+                </footer>
+
+            </article>
+
+            <hr>
+
+            <!-- PRODUCTO 2 -->
+
+            <article>
+
+                <header>
+
+                    <h3>iPhone 15 Pro</h3>
+
+                </header>
+
+                <img
+                    src="img/Screenshot -06-17 140907.png"
+                    alt="iPhone 15 Pro"
+                    width="250">
+
+                <p>
+                    Smartphone Apple
+                    de última generación.
+                </p>
+
+                <p>
+                    Precio:
+                    <strong>$999</strong>
+                </p>
+
+                <button>
+                    Agregar al carrito
+                </button>
+
+                <footer>
+                    Disponible
+                </footer>
+
+            </article>
+
+            <hr>
+
+            <!-- PRODUCTO 3 -->
+
+            <article>
+
+                <header>
+
+                    <h3>Samsung Galaxy S25</h3>
+
+                </header>
+
+                <img
+                    src="img/jjjjjj.png"
+                    alt="Samsung Galaxy S25"
+                    width="250">
+
+                <p>
+                    Pantalla AMOLED
+                    y cámara avanzada.
+                </p>
+
+                <p>
+                    Precio:
+                    <strong>$899</strong>
+                </p>
+
+                <button>
+                    Agregar al carrito
+                </button>
+
+                <footer>
+                    Disponible
+                </footer>
+
+            </article>
+
+            <hr>
+
+            <!-- PRODUCTO 4 -->
+
+            <article>
+
+                <header>
+
+                    <h3>Monitor LG UltraWide</h3>
+
+                </header>
+
+                <img
+                    src="img/hhhhh.png"
+                    alt="Monitor LG"
+                    width="250">
+
+                <p>
+                    Monitor 4K de 27 pulgadas.
+                </p>
+
+                <p>
+                    Precio:
+                    <strong>$350</strong>
+                </p>
+
+                <button>
+                    Agregar al carrito
+                </button>
+
+                <footer>
+                    Disponible
+                </footer>
+
+            </article>
+
+            <hr>
+
+            <!-- PRODUCTO 5 -->
+
+            <article>
+
+                <header>
+
+                    <h3>Teclado Mecánico RGB</h3>
+
+                </header>
+
+                <img
+                    src="img/teclado.png"
+                    alt="Teclado RGB"
+                    width="250">
+
+                <p>
+                    Switches mecánicos
+                    profesionales.
+                </p>
+
+                <p>
+                    Precio:
+                    <strong>$89</strong>
+                </p>
+
+                <button>
+                    Agregar al carrito
+                </button>
+
+                <footer>
+                    Disponible
+                </footer>
+
+            </article>
+
+            <hr>
+
+            <!-- PRODUCTO 6 -->
+
+            <article>
+
+                <header>
+
+                    <h3>Mouse Gamer Logitech</h3>
+
+                </header>
+
+                <img
+                    src="img/mouse.png"
+                    alt="Mouse Logitech"
+                    width="250">
+
+                <p>
+                    Sensor óptico
+                    de alta precisión.
+                </p>
+
+                <p>
+                    Precio:
+                    <strong>$59</strong>
+                </p>
+
+                <button>
+                    Agregar al carrito
+                </button>
+
+                <footer>
+                    Disponible
+                </footer>
+
+            </article>
+
+            <hr>
+
+            <!-- PRODUCTO 7 -->
+
+            <article>
+
+                <header>
+
+                    <h3>Auriculares HyperX</h3>
+
+                </header>
+
+                <img
+                    src="img/rrrrr.png"
+                    alt="Auriculares HyperX"
+                    width="250">
+
+                <p>
+                    Sonido envolvente 7.1.
+                </p>
+
+                <p>
+                    Precio:
+                    <strong>$120</strong>
+                </p>
+
+                <button>
+                    Agregar al carrito
+                </button>
+
+                <footer>
+                    Disponible
+                </footer>
+
+            </article>
+
+            <hr>
+
+            <!-- PRODUCTO 8 -->
+
+            <article>
+
+                <header>
+
+                    <h3>Steam Deck OLED</h3>
+
+                </header>
+
+                <img
+                    src="img/shot.png"
+                    alt="Steam Deck OLED"
+                    width="250">
+
+                <p>
+                    Consola portátil para gaming.
+                </p>
+
+                <p>
+                    Precio:
+                    <strong>$650</strong>
+                </p>
+
+                <button>
+                    Agregar al carrito
+                </button>
+
+                <footer>
+                    Disponible
+                </footer>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <hr>
+
+
+</body>
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header>
+
+        <h1>NovaTech Market</h1>
+
+
+    </header>
+
+    <hr>
+
+    <main>
+
+        <!-- DETALLE DEL PRODUCTO -->
+
+        <section>
+
+            <h2>Laptop Gamer Pro X</h2>
+
+            <p>
+                Equipo diseñado para alto rendimiento,
+                gaming y trabajo profesional.
+            </p>
+
+        </section>
+
+        <hr>
+
+        <!-- REQUISITO 5: GALERÍA MULTIMEDIA -->
+
+        <section>
+
+            <h2>Galería del Producto</h2>
+
+            <picture>
+
+                <!-- IMAGEN PARA MÓVILES -->
+
+                <source media="(max-width: 600px)"
+                        srcset="img/tu-imagen-movil.jpg">
+
+                <!-- INSERTAR AQUÍ LA IMAGEN PRINCIPAL -->
+
+                <img
+                    src="img/Laptop Gamer Pro X.png"
+                    alt="Imagen del producto"
+                    width="500">
+
+            </picture>
+
+        </section>
+
+        <hr>
+
+        <!-- REQUISITO 5: VIDEO DEL PRODUCTO -->
+
+        <section>
+
+            <h2>Video Demostrativo</h2>
+
+            <!-- INSERTAR AQUÍ EL VIDEO -->
+
+            <video controls width="500">
+
+                <source
+                    src="video/tu-video.mp4"
+                    type="video/mp4">
+
+                Tu navegador no soporta video.
+
+            </video>
+
+        </section>
+
+        <hr>
+
+        <!-- REQUISITO 5: AUDIO PROMOCIONAL -->
+
+        <section>
+
+            <h2>Audio Promocional</h2>
+
+            <!-- INSERTAR AQUÍ EL AUDIO -->
+
+            <audio controls>
+
+                <source
+                    src="audio/tu-audio.mp3"
+                    type="audio/mpeg">
+
+                Tu navegador no soporta audio.
+
+            </audio>
+
+        </section>
+
+        <hr>
+
+        <!-- REQUISITO 5: INFORMACIÓN TÉCNICA -->
+
+        <section>
+
+            <h2>Especificaciones Técnicas</h2>
+
+            <table border="1">
+
+                <caption>
+                    Características del Producto
+                </caption>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Característica</th>
+
+                        <th>Valor</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>Procesador</td>
+
+                        <td>Intel Core i7</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Memoria RAM</td>
+
+                        <td>16 GB</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Almacenamiento SSD</td>
+
+                        <td>512 GB</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Tarjeta Gráfica</td>
+
+                        <td>NVIDIA RTX</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Pantalla</td>
+
+                        <td>15.6 pulgadas</td>
+
+                    </tr>
+
+                </tbody>
+
+                <tfoot>
+
+                    <tr>
+
+                        <td colspan="2">
+
+                            Garantía de 1 año incluida.
+
+                        </td>
+
+                    </tr>
+
+                </tfoot>
+
+            </table>
+
+        </section>
+
+        <hr>
+
+        <!-- INFORMACIÓN DEL PRODUCTO -->
+
+        <section>
+
+            <h2>Descripción</h2>
+
+            <p>
+
+                Esta laptop ofrece un excelente
+                rendimiento para videojuegos,
+                programación, edición multimedia
+                y tareas profesionales.
+
+            </p>
+
+            <p>
+
+                Precio:
+                <strong>$1,200</strong>
+
+            </p>
+
+            <p>
+
+                Oferta:
+                <mark>20% OFF</mark>
+
+            </p>
+
+            <button>
+                Agregar al Carrito
+            </button>
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer>
+
+        <address>
+
+            NovaTech Market<br>
+            Santo Domingo,
+            República Dominicana
+
+        </address>
+
+        <small>
+
+            © 2026 NovaTech Market.
+            Todos los derechos reservados.
+
+        </small>
+
+    </footer>
+
+</body>
+
+</html>
+```
